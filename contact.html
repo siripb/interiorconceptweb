@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us - Format Furniture</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/e797f753b5.js" crossorigin="anonymous"></script>
+    <script src="scripts/contact.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+        <ul class="navbar-list">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Our Designs</a></li>
+            <li class="login1"><a href="login.html" id="login" target="_blank">Log In</a></li>
+        </ul>
+        </nav>
+    </div >
+    <div class="container">
+        <form action="" onsubmit=" return validateForm()">
+            <u>Contact Us</u>
+            <p id="result"></p>
+            <input type="text" id="name" autocomplete="off" placeholder="Your Name" >
+            <input type="email" id="email" autocomplete="off" placeholder="Your Email" >
+            <input type="number" id="phone" autocomplete="off" placeholder="Phone Number">
+            <textarea  id="message"  rows="4" placeholder="How can we help you?"></textarea>
+             <button type="submit" onclick="validateForm()">Send</button>
+        </form>
+    </div>   
+    <footer>
+        <div class="foot">
+            <div class="footercontainer">
+              <div class="socials">
+              
+                   <a href="https://www.instagram.com/format.furniture/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://nl.pinterest.com/formatfurniture/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/format.furniture1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="footerNav">
+                            <ol>
+                                <li><a href="main.html">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="projects.html">Our Designs</a></li>
+                                
+                            </ol>
+                </div>
+                <div class="address">
+                    <address>
+                        <a href="mailto:example@gmail.com" target="_blank" id="email">hello@format.furniture</a><br>
+                       <a href="" id="number">0294 74 53 93</a>  
+                                </address>  
+                </div>
+              </div>
+           </div>
+        </div>
+    </footer>
+    
+  
+    <script>
+       ScrollReveal().reveal('.container', { delay: 100 , origin: 'right'});
+      
+ </script>
+</body>
+</html>

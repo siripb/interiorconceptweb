@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Format Furniture</title>
+    <link rel="stylesheet" href="styles/input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=EB+Garamond&family=Josefin+Slab:wght@100&family=Montserrat:wght@300&family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Raleway:wght@100&display=swap" rel="stylesheet">
+<!--scripts -->
+<!--icons-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/e797f753b5.js" crossorigin="anonymous"></script>
+<!--scrolljs-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+<body>
+      <div class="navbar">
+        <nav>
+        <ul class="navbar-list">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Our Designs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+        </nav>
+    </div>
+    <div class="container">
+   <div class="form-box">
+    <form action="login.html" name="Formfill" onsubmit="return validation()" >
+        <h2>Register</h2>
+        <p id="result"></p>
+         <div class="input-box">
+            <input type="text" name="FullName" placeholder="Full Name" class="login" id="full_name" autocomplete="off">
+            <input type="email" name="Email" placeholder="Your Email" class="login" id="email" autocomplete="off" >
+            <input type="password" name="Password" placeholder="Password" class="login" id="pwd" autocomplete="off">
+            <input type="password" name="cPassword" placeholder="Confirm Password" class="login" autocomplete="off">
+             <input type="radio" class="radio"  name="gender" id="gender" required value="Male">
+             <label for="male" >M</label>
+            <input type="radio" class="radio"  name="radiobuton" value="Female">
+            <label for="female">F</label>
+        </div>
+        <div class="button">
+            <input type="submit" class="btn" onclick="validation() , addData(), logData()" value="Register">
+        </div>
+        <div class="group">
+          
+            <span><a href="login.html"  target="_blank" >Login</a></span>
+        </div>
+    </form>
+   </div>
+   <div class="popup" id="popup">
+    <ion-icon name="checkmark-circle-outline"></ion-icon>
+    <h2>Thank you!</h2>
+    <p>Your Registration was Succesful</p>
+    <a href="table.html" target="_blank"><button onclick="closeSlide(), clearAllInputs()">OK</button></a>
+   </div>
+   </div>
+</div>
+<footer>
+    <div class="foot">
+        <div class="footercontainer">
+          <div class="socials">
+          
+               <a href="https://www.instagram.com/format.furniture/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://nl.pinterest.com/formatfurniture/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://www.facebook.com/format.furniture1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="footerNav">
+                        <ol>
+                            <li><a href="main.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Our Designs</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                           
+                        </ol>
+            </div>
+            <div class="address">
+                <address>
+                    <a href="mailto:example@gmail.com" target="_blank" id="email">hello@format.furniture</a><br>
+                   <a href="" id="number">0294 74 53 93</a>  
+                            </address>  
+            </div>
+          </div>
+       </div>
+    </div>
+</footer>
+<script>
+                 ScrollReveal({ 
+        reset: true ,
+        distance: '60px',
+        duration:2000,
+        delay:400
+    });
+    ScrollReveal().reveal('.container', { delay: 100 , origin: 'right'});
+ 
+    ScrollReveal().reveal('.input-box', { delay: 100 , origin: 'top'});
+    </script>
+
+   <!--Scripts-->
+   <script src="scripts/input.js"></script> <!--Validation-->
+   <script src="scripts/localstorage.js"></script>    <!--local Storage-->
+</body>
+</html>

@@ -1,0 +1,404 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Copy-of-WEB_260B-AMK-Arche-X-Iceberg7-58-of-60.jpg);
+    animation-name: scale;
+    animation-duration: 1.8s;
+    background-repeat: no-repeat;
+}
+.navbar {
+    font-family: 'EB Garamond', serif;
+    background-color: rgb(82, 63, 50);
+    font-size: 17px;
+ 
+  
+} 
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    padding-top: 20px;
+    text-decoration: none;
+   padding-bottom: 15px;  
+}
+.navbar ul li {
+   
+    padding-right: 60px;
+    list-style-type: none;
+}
+.navbar a {      
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+   
+}
+.navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(173, 141, 141);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+   transition: 0.6s;
+}
+.navbar a:hover:after {
+    width: 100%;
+}
+.navbar .login1 {
+    background-color:rgba(192, 135, 102, 0.507);
+    width: 100px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    border-radius: 10px;
+    
+   
+}
+
+.navbar .login1:hover {
+    background-color:rgba(192, 135, 102, 0.877);
+    transition: 0.5s;
+}
+.navbar .login1 a:hover::after {
+    width: 0px;
+}    
+
+.hometext {
+    padding-left: 100px;
+   padding-top: 23em;
+   perspective: 100rem;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hometext h1 {
+    font-family: 'Baloo Da 2', sans-serif;
+    font-size: 65px;
+    padding-bottom: 6px;
+    letter-spacing: 1px;
+    line-height: 64px;
+    color: rgb(245, 242, 239);
+    text-shadow: 2px 2px rgba(0, 0, 0,0.4);
+    opacity: 0;
+    animation: movehometext 1.5s forwards;
+}
+.hometext p {
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    width: 600px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 1px 1px rgba(0, 0, 0,0.4);
+    opacity: 0;
+    animation: movehometext 1.9s forwards;
+    font-weight: 500;
+}
+@keyframes movehometext {
+    0% {
+        transform: translateY(7rem) rotateY(-30deg);
+      }
+    
+      100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+      }
+
+}
+.designers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading1 {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    font-size: 40px;
+
+}
+.heading1 a {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    text-decoration: none;
+    color: rgb(82, 63, 50);
+    padding: 0 10px;
+   
+    
+   
+    
+}
+.heading1 a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(102, 69, 50);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+  
+}
+
+.heading1 a:hover:after {
+    width: 100%;
+}
+.icons {
+    background-color: #f7f7f7;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.fafa i {
+    color: rgb(82, 61, 48);
+    opacity: 0.8;
+}
+.fafa i:hover {
+    opacity: 1;
+}
+.fafa p {
+    padding-top: 15px;
+    font-style: oblique;
+    
+}
+.fafa {
+    padding-left: 100px;
+    padding-right: 100px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.designers a {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    text-decoration: none;
+    color: rgb(82, 63, 50);
+    padding: 0 10px;
+    
+}
+.designers a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(102, 69, 50);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+  
+}
+
+.designers a:hover:after {
+    width: 100%;
+}
+.container {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.designs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.designs .card {
+    flex: 1;
+    margin: 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    opacity: 0;
+    animation: boxesmoving 1.9s forwards;
+}
+.card .card-image {
+    width: 100%;
+    height: 500px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+}
+.designs .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes boxesmoving {
+    0% {
+        transform: translateY(7rem) rotateY(-30deg);
+      }
+    
+      100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+      }
+}
+
+.designs .card:hover {
+    box-shadow: 2px 5px 10px 3px rgba(54, 28, 10, 0.729);
+}
+.designers .card h1 {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 28px;
+    color: rgb(82, 63, 50);
+    font-family: 'Oxygen', sans-serif;
+}
+.designers .card p {
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+}
+.afford {
+    margin-top: 80px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+.afford h2 {
+    font-size: 40px;
+    width: 600px;
+    padding-left: 90px;
+    font-family: 'Raleway', sans-serif;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.text button {
+    font-size: 20px;
+    background-color:rgba(192, 135, 102, 0.507);
+    height: 50px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 95px;
+    color: black;
+    border: 1px solid rgba(192, 135, 102, 0.507) ;
+    border-radius: 4px;
+    
+}
+.text button:hover{
+    background-color:rgba(192, 135, 102, 0.877)
+}
+.text button a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+.foot {
+    background-color: rgb(82, 63, 50);
+}
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.socials a {
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socials a i{
+    margin-top: 50px;
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+}
+.socials a i:hover {
+    color: black;
+    transition: 0.3s;
+}
+.footerNav {
+    margin: 0px 0 ;
+ 
+}
+.footerNav ol {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-bottom: 30px;
+}
+.footerNav ol li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transform: 0.5s;
+ 
+}
+.footerNav ol li a:hover {
+    color: black;
+    opacity: 1;
+    transition: 0.3s;
+}
+.footercontainer .address {
+    text-align: center;
+     color: white;
+     font-family: 'Rubik', sans-serif;
+    
+}
+.footercontainer .address a{
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    opacity: 0.7;
+}
+.footercontainer .address a:hover {
+    color: black;
+    opacity: 1;
+    transition: 0.3s;
+}
+#number {
+    pointer-events: none;
+}
